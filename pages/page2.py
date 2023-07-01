@@ -8,7 +8,7 @@ from streamlit_folium import folium_static
 
 st.title('景点间不同出行方式的路程和耗时')
 # 读取CSV文件
-url="https://github.com/2000yyqx/Yangqian-QI/blob/main/CQ.csv"
+url="https://github.com/2000yyqx/streamlit.github.io/blob/main/CQ.csv"
 locations_df = pd.read_csv(url,encoding='utf-8')
 
 # 显示输入表单
