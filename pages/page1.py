@@ -6,7 +6,7 @@ import json
 
 st.title('重庆旅游景点分布')
 import pandas as pd
-url="https://github.com/2000yyqx/Yangqian-QI/blob/main/CQ.csv"
+url="https://github.com/2000yyqx/streamlit.github.io/blob/main/CQ.csv"
 geo = pd.read_csv(url,encoding='utf-8')
 import geopandas as gpd
 file_path="https://github.com/2000yyqx/Yangqian-QI/blob/main/locations.geojson"  # 文件路径，需要替换为实际的文件路径
