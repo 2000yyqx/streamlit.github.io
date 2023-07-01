@@ -25,7 +25,7 @@ def get_poi(location, radius, poi_type):
 def main():
     st.title("POI点查询")
     url="https://github.com/2000yyqx/streamlit.github.io/blob/main/CQ.csv"
-    locations_df = pd.read_csv(url,encoding='gbk')
+    locations_df = pd.read_csv(url)
     #locations_df = pd.read_csv(r'C:\Users\ASUS\Desktop\软件工程与GIS开发\CQ.csv')
     places= st.selectbox("请选择一个景点",locations_df['景点名称'].values)
     place=locations_df.loc[locations_df['景点名称'] ==places, ['景点纬度', '景点经度']].squeeze()
