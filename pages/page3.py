@@ -24,7 +24,7 @@ def get_poi(location, radius, poi_type):
 # Streamlit应用程序
 def main():
     st.title("POI点查询")
-    url="https://github.com/2000yyqx/Yangqian-QI/blob/main/CQ.csv"
+    url="https://github.com/2000yyqx/streamlit.github.io/blob/main/CQ.csv"
     locations_df = pd.read_csv(url,encoding='utf-8')
     #locations_df = pd.read_csv(r'C:\Users\ASUS\Desktop\软件工程与GIS开发\CQ.csv')
     places= st.selectbox("请选择一个景点",locations_df['景点名称'].values)
