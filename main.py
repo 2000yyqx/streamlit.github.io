@@ -5,7 +5,7 @@ import streamlit as st
 from streamlit_folium import folium_static
 st.title('重庆旅游简易导览（下方为景点热力图）')
 # 读取CSV文件
-url="https://github.com/2000yyqx/Yangqian-QI/blob/main/CQ.csv"
+url="https://github.com/2000yyqx/streamlit.github.io/blob/main/CQ.csv"
 locations_df = pd.read_csv(url,encoding='utf-8')
 
 # 创建地图
