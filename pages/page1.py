@@ -9,7 +9,7 @@ import pandas as pd
 url="https://github.com/2000yyqx/streamlit.github.io/blob/main/CQ.csv"
 geo = pd.read_csv(url,encoding='utf-8')
 import geopandas as gpd
-file_path="https://github.com/2000yyqx/Yangqian-QI/blob/main/locations.geojson"  # 文件路径，需要替换为实际的文件路径
+file_path="https://github.com/2000yyqx/streamlit.github.io/blob/main/locations.geojson"  # 文件路径，需要替换为实际的文件路径
 geo = gpd.read_file(file_path)
 Minx=min(geo.bounds["minx"])
 Miny=min(geo.bounds["miny"])
