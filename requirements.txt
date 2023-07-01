@@ -1,6 +1,2 @@
 folium
-pandas
-folium.plugins
-streamlit_folium
-requests
-json
+
